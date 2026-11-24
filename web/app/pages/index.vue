@@ -8,7 +8,7 @@ const { isRead, read } = useProgress()
 const onContentClick = useInternalLinks()
 
 const groups = computed(() => {
-  const order: Track[] = ['overview', 'fae', 'equipment', 'appendix']
+  const order: Track[] = ['overview', 'fae', 'equipment', 'interview', 'appendix']
   return order
     .map((track) => ({ track, label: TRACK_LABEL[track], items: chapters.value?.filter((c) => chapterTrack(c.order) === track) ?? [] }))
     .filter((g) => g.items.length)

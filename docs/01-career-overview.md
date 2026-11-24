@@ -7,7 +7,7 @@
 - 分辨 FAE、AE、設備工程師（EE）、原廠 CE / FSE、測試 / 產品工程師、CIM / EAP 工程師的工作內容
 - 了解台灣主要雇主類型與各自的技能需求
 - 評估軟體背景轉這些職位的優勢與缺口
-- 規劃第 02～06 章的學習順序與求職準備
+- 規劃第 02～14 章的學習順序與求職準備
 
 ---
 
@@ -36,21 +36,21 @@
 
 ### 2.1 第三條路：CIM / EAP 工程師 ⭐
 
-對 .NET / MSSQL 背景來說，**CIM（Computer Integrated Manufacturing）**是最直接的橋梁：
+對 .NET / MSSQL 背景來說，**CIM**（Computer Integrated Manufacturing）是最直接的橋梁：
 
 - **EAP（Equipment Automation Program）**：透過 **SECS/GEM** 與機台溝通，接收事件與資料、下達配方與指令
 - **MES（Manufacturing Execution System）**：管理批次（Lot）流程、派工、追溯
 - 常用技術：**C# / .NET**、Java、Oracle / MSSQL、訊息匯流排（如 TIBCO、RabbitMQ、Kafka）、Python 資料分析
 - 可先做 CIM 熟悉產線與設備，再轉設備或製程，也能往智慧製造、AI 良率分析發展
 
-> 詳見[第 05 章](05-equipment-engineering-practice.md)的 SECS/GEM 與工廠自動化。
+> 詳見[第 08 章](08-equipment-engineering-practice.md)的 SECS/GEM 與工廠自動化。
 
 ## 3. 台灣主要雇主類型 🟢
 
 | 類型 | 代表公司（舉例） | 適合職位 |
 |---|---|---|
 | **晶圓代工 / 記憶體** | 台積電、聯電、世界先進、力積電、美光、南亞科、華邦 | EE、PE、CIM |
-| **封測** | 日月光、矽品、力成、京元電 | EE、CIM、測試工程師（[第 06 章](06-test-product-engineering.md)） |
+| **封測** | 日月光、矽品、力成、京元電 | EE、CIM、測試工程師（[第 13 章](13-test-product-engineering.md)） |
 | **設備原廠（外商）** | ASML、Applied Materials、Lam Research、TEL、KLA、Screen、DISCO、Advantest | CE / FSE、AE |
 | **本土設備 / 零組件** | 弘塑、辛耘、均華、家登、帆宣、漢唐（廠務系統） | EE、AE、FSE |
 | **IC 設計** | 聯發科、瑞昱、聯詠、奇景、群聯、新唐、義隆、立錡、矽力杰 | FAE、AE、產品 / 測試工程師 |
@@ -84,22 +84,24 @@
 |---|---|---|
 | 電子學與電路 | 歐姆定律、RC、電源、MOSFET、運算放大器 | [SWEMindset 21](https://wyc915.github.io/SWEMindset/chapters/21-mcu-hardware)、[02](02-fae-technical-foundation.md) |
 | 量測儀器 | 示波器、電源供應器、電子負載、邏輯分析儀實際操作 | [02](02-fae-technical-foundation.md) |
-| 半導體製程 | 晶圓製程流程、各站設備原理 | [04](04-semiconductor-process-equipment.md) |
-| 統計品管 | SPC、Cpk、管制圖、DOE | [05](05-equipment-engineering-practice.md) |
-| 機電與工安 | 氣動、真空、馬達、PLC、LOTO | [04](04-semiconductor-process-equipment.md)、[05](05-equipment-engineering-practice.md) |
+| 半導體製程 | 晶圓製程流程、各站設備原理 | [07](07-semiconductor-process-equipment.md) |
+| 統計品管 | SPC、Cpk、管制圖、DOE | [08](08-equipment-engineering-practice.md) |
+| 機電與工安 | 氣動、真空、馬達、PLC、LOTO | [07](07-semiconductor-process-equipment.md)、[08](08-equipment-engineering-practice.md) |
 
 ## 6. 學習與求職路線 🟡
 
 ```mermaid
 flowchart TD
   A[第 01 章<br/>職涯總覽] --> B{方向}
-  B -- FAE --> C[SWEMindset 第 21 章 MCU 硬體<br/>第 02 章 FAE 技術基本功]
-  C --> D[第 03 章<br/>FAE 業務流程與客戶支援]
-  B -- 設備 / CIM --> E[第 04 章<br/>半導體製程與設備]
-  E --> F[第 05 章<br/>設備工程實務：SPC、SECS/GEM、工安]
-  B -- 測試 / 產品 --> T[第 06 章<br/>ATE、CP / FT、良率分析]
-  D --> G[實作作品集<br/>EVB 量測報告 / 除錯紀錄]
-  F --> H[實作作品集<br/>SPC 分析 / SECS 模擬器]
+  B -- FAE --> C[第 02 章 技術基本功<br/>第 03 章 專案與客訴流程]
+  C --> D[第 04～06 章<br/>電源 IC / 無線 / 車用 MCU]
+  B -- 設備 / CIM --> E[第 07 章 製程原理<br/>第 08 章 設備工程實務]
+  E --> F[第 09～12 章<br/>蝕刻 / 薄膜 / CMP / 先進封裝]
+  B -- 測試 / 產品 --> T[第 13 章<br/>ATE、CP / FT、良率分析]
+  D --> I[第 14 章<br/>面試準備]
+  F --> I
+  T --> I
+  I --> G[實作作品集<br/>量測報告 / SPC 分析 / SECS 模擬器]
 ```
 
 **作品集建議**（比證照更有說服力）：
