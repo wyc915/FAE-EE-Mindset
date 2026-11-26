@@ -1,6 +1,6 @@
 # FAE / 設備工程師必備常識知識庫
 
-> 給想進入半導體與電子產業「應用與製造端」的工程師：**FAE、設備工程師（EE）、原廠 CE、測試 / 產品工程師、CIM / EAP 工程師**。公司內部流程是機密，本站只整理**公開且通用**的原理、產業標準（JEDEC、IEC、SEMI、AEC）與方法論，也就是面試真正會考的內容。
+> 給想進入半導體與電子產業「應用與製造端」的工程師：**FAE、設備工程師（EE）、原廠 CE、測試 / 產品工程師、製造（MFG）、CIM / EAP、智慧製造（IMC）**。公司內部流程是機密，本站只整理**公開且通用**的原理、產業標準（JEDEC、IEC、SEMI、AEC）與方法論，也就是面試真正會考的內容。
 
 ## 閱讀方式
 
@@ -39,11 +39,19 @@
 | 12 | [先進封裝設備](12-advanced-packaging-equipment.md) | TSV、薄化、切割、TCB、混合鍵合、翹曲 |
 | 13 | [測試與產品工程師](13-test-product-engineering.md) | ATE、CP / FT、DFT、Wafer Map 與良率分析 |
 
+### 製造與智慧製造軌
+
+| # | 章節 | 一句話 |
+|---|---|---|
+| 15 | [MFG 製造工程](15-mfg-manufacturing.md) | WIP、生產週期、派工、瓶頸、Q-time、OCAP |
+| 16 | [CIM 工程師](16-cim-engineering.md) | MES、EAP、RTD、MCS、SECS/GEM 實作與 EAP 設計 |
+| 17 | [IMC 智慧製造](17-imc-smart-manufacturing.md) | 資料平台、FDC、VM、R2R、預測保養、AI 良率、MLOps |
+
 ### 面試準備
 
 | # | 章節 | 一句話 |
 |---|---|---|
-| 14 | [面試準備](14-interview-preparation.md) | 流程、履歷轉換、自介範本、STAR、各職位情境題 |
+| 18 | [面試準備](18-interview-preparation.md) | 流程、履歷轉換、自介範本、STAR、各職位情境題 |
 
 ### 附錄
 
@@ -61,6 +69,7 @@
 | 四、設備 / CIM 基本功 | 懂製程與設備子系統、會用數據改善 | [07](07-semiconductor-process-equipment.md)、[08](08-equipment-engineering-practice.md) |
 | 五、設備模組 | 依目標模組選讀 | [09](09-etch-equipment.md) 蝕刻、[10](10-thin-film-equipment.md) 薄膜、[11](11-cmp-equipment.md) CMP、[12](12-advanced-packaging-equipment.md) 先進封裝 |
 | 六、測試 / 產品 | 懂測試流程、會分析良率數據 | [07](07-semiconductor-process-equipment.md)、[13](13-test-product-engineering.md) |
-| 七、求職 | 履歷、自介、行為題與情境題 | [14](14-interview-preparation.md) |
+| 七、製造 / CIM / 智慧製造 | 懂產線運作、工廠系統與資料應用 | [15](15-mfg-manufacturing.md)、[16](16-cim-engineering.md)、[17](17-imc-smart-manufacturing.md) |
+| 八、求職 | 履歷、自介、行為題與情境題 | [18](18-interview-preparation.md) |
 
-> 軟體背景（如 .NET / SQL）最直接的入口是 **CIM / EAP 工程師**（[08](08-equipment-engineering-practice.md)）與**測試 / 產品工程師**（[13](13-test-product-engineering.md)）；FAE 則需先補電子學與量測（[02](02-fae-technical-foundation.md)，基礎可參考 [SWEMindset 第 21 章](https://wyc915.github.io/SWEMindset/chapters/21-mcu-hardware)）。
+> 軟體背景（如 .NET / SQL）最直接的入口是 **CIM / EAP 工程師**（[16](16-cim-engineering.md)）、**智慧製造**（[17](17-imc-smart-manufacturing.md)）與**測試 / 產品工程師**（[13](13-test-product-engineering.md)）；FAE 則需先補電子學與量測（[02](02-fae-technical-foundation.md)，基礎可參考 [SWEMindset 第 21 章](https://wyc915.github.io/SWEMindset/chapters/21-mcu-hardware)）。

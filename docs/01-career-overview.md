@@ -1,13 +1,13 @@
-# 01. 硬體相關職涯總覽：FAE、設備、測試與 CIM
+# 01. 硬體相關職涯總覽：FAE、設備、製造、CIM 與智慧製造
 
 > **一句話**：FAE 是「懂技術的客戶問題解決者」，設備工程師是「讓機台穩定量產的人」。兩者的公司內部流程大多是機密，但背後的**電子學、量測、製程、統計與產業標準（JEDEC、IEC、SEMI）是公開且通用的**，這才是面試真正考的東西。
 
 ## 學習目標
 
-- 分辨 FAE、AE、設備工程師（EE）、原廠 CE / FSE、測試 / 產品工程師、CIM / EAP 工程師的工作內容
+- 分辨 FAE、AE、設備工程師（EE）、原廠 CE / FSE、測試 / 產品工程師、製造（MFG）、CIM / EAP、智慧製造（IMC）的工作內容
 - 了解台灣主要雇主類型與各自的技能需求
 - 評估軟體背景轉這些職位的優勢與缺口
-- 規劃第 02～14 章的學習順序與求職準備
+- 規劃第 02～18 章的學習順序與求職準備
 
 ---
 
@@ -32,7 +32,9 @@
 | **CE / FSE**（Customer / Field Service Engineer） | 設備原廠（ASML、AMAT、Lam、TEL、KLA 等） | 在客戶晶圓廠內安裝、維修、升級自家機台 | 該機台專業、英文、抗壓 |
 | **製程工程師 PE**（Process Engineer） | 晶圓廠 | 負責製程配方與良率 | 物理化學、統計、DOE |
 | **測試 / 產品工程師**（TE / PDE） | 封測廠、IC 設計公司 | 寫 ATE 測試程式、分析良率與 Bin | 電路、C++ / Python、資料分析 |
+| **製造工程師 MFG** | 晶圓廠、封測廠、面板廠 | 產線運作、派工、WIP 與週期、異常第一線處置 | 排隊理論、統計、溝通與人員管理 |
 | **CIM / EAP 工程師** | 晶圓廠、封測廠、面板廠、自動化系統商 | 寫連接機台與 MES 的自動化軟體 | **C# / .NET、Java、SECS/GEM、資料庫** |
+| **智慧製造（IMC）工程師** | 晶圓廠、封測廠的智慧製造 / 數位轉型單位 | 資料平台、虛擬量測、預測保養、AI 良率分析 | Python、SQL、Kafka、機器學習、MLOps |
 
 ### 2.1 第三條路：CIM / EAP 工程師 ⭐
 
@@ -43,13 +45,13 @@
 - 常用技術：**C# / .NET**、Java、Oracle / MSSQL、訊息匯流排（如 TIBCO、RabbitMQ、Kafka）、Python 資料分析
 - 可先做 CIM 熟悉產線與設備，再轉設備或製程，也能往智慧製造、AI 良率分析發展
 
-> 詳見[第 08 章](08-equipment-engineering-practice.md)的 SECS/GEM 與工廠自動化。
+> 詳見[第 16 章](16-cim-engineering.md) CIM 工程師；相鄰的職位還有 [第 15 章](15-mfg-manufacturing.md) 製造（MFG）與 [第 17 章](17-imc-smart-manufacturing.md) 智慧製造（IMC）。
 
 ## 3. 台灣主要雇主類型 🟢
 
 | 類型 | 代表公司（舉例） | 適合職位 |
 |---|---|---|
-| **晶圓代工 / 記憶體** | 台積電、聯電、世界先進、力積電、美光、南亞科、華邦 | EE、PE、CIM |
+| **晶圓代工 / 記憶體** | 台積電、聯電、世界先進、力積電、美光、南亞科、華邦 | EE、PE、MFG、CIM、智慧製造 |
 | **封測** | 日月光、矽品、力成、京元電 | EE、CIM、測試工程師（[第 13 章](13-test-product-engineering.md)） |
 | **設備原廠（外商）** | ASML、Applied Materials、Lam Research、TEL、KLA、Screen、DISCO、Advantest | CE / FSE、AE |
 | **本土設備 / 零組件** | 弘塑、辛耘、均華、家登、帆宣、漢唐（廠務系統） | EE、AE、FSE |
@@ -98,9 +100,11 @@ flowchart TD
   B -- 設備 / CIM --> E[第 07 章 製程原理<br/>第 08 章 設備工程實務]
   E --> F[第 09～12 章<br/>蝕刻 / 薄膜 / CMP / 先進封裝]
   B -- 測試 / 產品 --> T[第 13 章<br/>ATE、CP / FT、良率分析]
-  D --> I[第 14 章<br/>面試準備]
+  B -- 製造 / CIM / 智慧製造 --> M[第 15～17 章<br/>MFG / CIM / IMC]
+  D --> I[第 18 章<br/>面試準備]
   F --> I
   T --> I
+  M --> I
   I --> G[實作作品集<br/>量測報告 / SPC 分析 / SECS 模擬器]
 ```
 

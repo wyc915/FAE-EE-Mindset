@@ -13,7 +13,10 @@ const ICONS: Record<string, string> = {
   '11': 'mdi-rotate-orbit',
   '12': 'mdi-package-variant-closed',
   '13': 'mdi-chip',
-  '14': 'mdi-account-tie-voice',
+  '15': 'mdi-account-hard-hat',
+  '16': 'mdi-lan-connect',
+  '17': 'mdi-brain',
+  '18': 'mdi-account-tie-voice',
 }
 
 export function chapterIcon(slug: string): string {
@@ -24,14 +27,15 @@ export function chapterLabel(order: number | null): string {
   return order == null ? '附錄' : String(order).padStart(2, '0')
 }
 
-export type Track = 'overview' | 'fae' | 'equipment' | 'interview' | 'appendix'
+export type Track = 'overview' | 'fae' | 'equipment' | 'mfg' | 'interview' | 'appendix'
 
-/** 章節所屬分類：01 總覽、02–06 FAE、07–13 設備與製造、14 起面試準備、無序號為附錄 */
+/** 章節所屬分類：01 總覽、02–06 FAE、07–13 設備與製造、15–17 製造與智慧製造、18 起面試準備、無序號為附錄 */
 export function chapterTrack(order: number | null): Track {
   if (order == null) return 'appendix'
   if (order <= 1) return 'overview'
   if (order <= 6) return 'fae'
   if (order <= 13) return 'equipment'
+  if (order <= 17) return 'mfg'
   return 'interview'
 }
 
@@ -39,6 +43,7 @@ export const TRACK_LABEL: Record<Track, string> = {
   overview: '總覽',
   fae: 'FAE 軌',
   equipment: '設備與製造軌',
+  mfg: '製造與智慧製造軌',
   interview: '面試準備',
   appendix: '附錄',
 }
@@ -47,6 +52,7 @@ export const TRACK_ICON: Record<Track, string> = {
   overview: 'mdi-compass-outline',
   fae: 'mdi-account-wrench',
   equipment: 'mdi-factory',
+  mfg: 'mdi-robot-industrial',
   interview: 'mdi-account-tie-voice',
   appendix: 'mdi-book-alphabet',
 }
